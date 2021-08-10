@@ -1,0 +1,22 @@
+/*global*/
+.g-bg--recipe--bottom {
+  background: linear-gradient(#BFA630 0%, #ece8d0 59%, #ffffff 96%);
+  margin-top: auto;
+}
+
+.g-bg--olfactory--bottom {
+  background: linear-gradient(#FFCF73 0%, #f1e5cf 59%, #ffffff 96%);
+  margin-top: auto;
+}
+
+.g-bg--recipe--top {
+  background: linear-gradient(0deg, #BFA630 0%, #ece8d0 59%, #ffffff 96%);
+  margin-top: auto;
+}
+
+.g-bg--olfactory--top {
+  background: linear-gradient(0deg, #FFCF73 0%, #f1e5cf 59%, #ffffff 96%);
+  margin-top: auto;
+}
+
+/*# sourceMappingURL=Theme.css.map */

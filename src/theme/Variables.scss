@@ -13,3 +13,126 @@ $light-color: #F2F2F2;
 
 $g-title: 1.7em;
 $g-subtitle: 1.4em;
+
+
+
+.g-bg--recipe--bottom {
+  background: linear-gradient($recipe-main-color 0%, $recipe-shadow-color 59%, #ffffff 96%);  margin-top: auto;
+}
+
+.g-bg--olfactory--bottom {
+  background: linear-gradient($olfactory-main-color 0%, $olfactory-shadow-color 59%, #ffffff 96%);  margin-top: auto;
+}
+
+.g-bg--recipe--top {
+  background: linear-gradient(0deg, $recipe-main-color 0%, $recipe-shadow-color 59%, #ffffff 96%);  margin-top: auto;
+}
+.g-bg--olfactory--top {
+  background: linear-gradient(0deg, $olfactory-main-color 0%, $olfactory-shadow-color 59%, #ffffff 96%);  margin-top: auto;
+}
+
+* {
+  vertical-align: baseline;
+  font-family: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+a {
+  border-bottom: 1px solid;
+}
+
+a:visited {
+  color: $font-main-color;
+}
+
+a:hover {
+  color: $font-main-color;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  monospace;
+}
+
+/*Глобальные классы*/
+
+.title {
+  color: $font-main-color;
+  font-size: $g-title;
+}
+
+.sub_title {
+  color: $font-main-color;
+  font-size: $g-subtitle;
+}
+
+.text {
+  color: $font-main-color;
+}
+
+.text_bold {
+  color: $font-main-color;
+  font-weight: bold;
+}
+
+.text_italic {
+  color: $font-main-color;
+  font-style: italic;
+}
+
+/* Сетка */
+.flex_container {
+  display: flex;
+}
+
+.flex_row {
+  flex-direction: row;
+}
+
+.flex_column {
+  flex-direction: column;
+}
+
+.flex__center {
+  justify-content: center;
+  align-items: center;
+}
+
+.flex__space__between {
+  justify-content: space-between;
+  align-content: space-between;
+}
+
+.flex__wrap {
+  flex-wrap: wrap;
+}
+
+/*margin-bottom*/
+
+.margin_bottom_10 {
+  margin-bottom: 10px;
+}
+
+.margin_bottom_16 {
+  margin-bottom: 16px;
+}
+
+.margin_bottom_24 {
+  margin-bottom: 24px;
+}
+
+.margin_bottom_32 {
+  margin-bottom: 32px;
+}

@@ -1,3 +1,25 @@
+@charset "UTF-8";
+/*global*/
+.g-bg--recipe--bottom {
+  background: linear-gradient(#BFA630 0%, #ece8d0 59%, #ffffff 96%);
+  margin-top: auto;
+}
+
+.g-bg--olfactory--bottom {
+  background: linear-gradient(#FFCF73 0%, #f1e5cf 59%, #ffffff 96%);
+  margin-top: auto;
+}
+
+.g-bg--recipe--top {
+  background: linear-gradient(0deg, #BFA630 0%, #ece8d0 59%, #ffffff 96%);
+  margin-top: auto;
+}
+
+.g-bg--olfactory--top {
+  background: linear-gradient(0deg, #FFCF73 0%, #f1e5cf 59%, #ffffff 96%);
+  margin-top: auto;
+}
+
 * {
   vertical-align: baseline;
   font-family: inherit;
@@ -8,43 +30,51 @@
   margin: 0;
 }
 
+a {
+  border-bottom: 1px solid;
+}
+
+a:visited {
+  color: #1A1A1A;
+}
+
+a:hover {
+  color: #1A1A1A;
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }
 
 /*Глобальные классы*/
-
 .title {
-  color: $font-main-color;
-  font-size: $g-title;
+  color: #1A1A1A;
+  font-size: 1.7em;
 }
 
 .sub_title {
-  color: $font-main-color;
-  font-size: $g-subtitle;
+  color: #1A1A1A;
+  font-size: 1.4em;
 }
 
 .text {
-  color: $font-main-color;
+  color: #1A1A1A;
 }
 
 .text_bold {
-  color: $font-main-color;
+  color: #1A1A1A;
   font-weight: bold;
 }
 
 .text_italic {
-  color: font-main-color;
+  color: #1A1A1A;
   font-style: italic;
 }
 
@@ -61,22 +91,21 @@ code {
   flex-direction: column;
 }
 
-.flex__center {
+.flex_center {
   justify-content: center;
   align-items: center;
 }
 
-.flex__space__between {
+.flex_space_between {
   justify-content: space-between;
   align-content: space-between;
 }
 
-.flex__wrap {
+.flex_wrap {
   flex-wrap: wrap;
 }
 
 /*margin-bottom*/
-
 .margin_bottom_10 {
   margin-bottom: 10px;
 }
@@ -92,3 +121,5 @@ code {
 .margin_bottom_32 {
   margin-bottom: 32px;
 }
+
+/*# sourceMappingURL=index.css.map */
