@@ -122,4 +122,20 @@ code {
   margin-bottom: 32px;
 }
 
+.bottom_nav {
+  background: linear-gradient(0deg, #BFA630 0%, #ece8d0 59%, #ffffff 96%);
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.bottom_nav a {
+  font-size: 0.5em;
+  margin-right: 20px;
+  position: center;
+  display: inline-block;
+  text-align: center;
+}
+
 /*# sourceMappingURL=Variables.css.map */
