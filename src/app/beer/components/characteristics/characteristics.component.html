@@ -1,0 +1,20 @@
+<h3 class="block-title">basic</h3>
+
+<!-- TODO пределать название характеристик -->
+<div class="block" *ngIf="characteristic">
+    <div>
+        <p>volume</p>
+        <p>boil volume</p>
+        <p>abv</p>
+        <p>target fg</p>
+        <p>target og</p>
+        <p>ebc</p>
+        <p>srm</p>
+        <p>ph</p>
+        <p>attenuation level</p>
+
+    </div>
+    <div>
+        <p *ngFor="let value of valueCharacteristic">{{value}}</p>
+    </div>
+</div>

@@ -1,0 +1,22 @@
+.block-title {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    margin-bottom: .2rem;
+}
+
+.block {
+    background-color: lightgray;
+    padding: .7rem;
+    border-top: 3px solid;
+    height: 70vh;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.image {
+    max-width: 60%;
+    max-height: 60%;
+    object-fit: contain;
+}

@@ -1,0 +1,61 @@
+<svg #svgElement width="600" height="500" viewBox="0 0 600 500" xmlns="http://www.w3.org/2000/svg">
+
+    <symbol id="bee" viewBox="0 0 650 500">
+        <defs>
+            <mask id="mask1">
+                <circle cx="275" cy="450" r="150" stroke-dasharray="300px 270px" fill="white" stroke="white"
+                    stroke-width="35" />
+            </mask>
+            <mask id="mask2">
+                <circle cx="275" cy="500" r="150" stroke-dasharray="300px 270px" fill="white" stroke="white"
+                    stroke-width="35" />
+            </mask>
+            <mask id="mask3">
+                <circle cx="275" cy="550" r="150" stroke-dasharray="300px 270px" fill="white" stroke="white"
+                    stroke-width="35" />
+            </mask>
+            <mask id="mask4">
+                <circle cx="275" cy="600" r="150" stroke-dasharray="300px 270px" fill="white" stroke="white"
+                    stroke-width="35" />
+            </mask>
+            <linearGradient id="gradientRight">
+                <stop offset="5%" stop-color="lightblue" />
+                <stop offset="95%" stop-color="#e4eaec" />
+            </linearGradient>
+
+            <linearGradient id="gradientLeft" x1="1" x2="0" y1="0" y2="0">
+                <stop offset="5%" stop-color="lightblue" />
+                <stop offset="95%" stop-color="#e4eaec" />
+            </linearGradient>
+        </defs>
+
+        <!-- усики -->
+        <path d="m250 145 c -30 -200, -40 0, -15 -70" stroke="black" stroke-width="5" fill="orange" />
+        <path d="m290 145 c 30 -220, 40 0, 15 -90" stroke="black" stroke-width="5" fill="orange" />
+
+        <!-- голова -->
+        <ellipse cx="275" cy="210" rx="70" ry="70" />
+        <circle cx="275" cy="250" r="50" fill="transparent" fill="orange" stroke="black" stroke-width="5" />
+
+        <!-- тело -->
+        <circle cx="275" cy="350" r="110" fill="orange" stroke="black" stroke-width="5" />
+        <circle cx="275" cy="350" r="110" mask="url(#mask1)" fill="black" />
+        <circle cx="275" cy="350" r="110" mask="url(#mask2)" fill="orange" />
+        <circle cx="275" cy="350" r="110" mask="url(#mask3)" fill="black" />
+        <circle cx="275" cy="350" r="110" mask="url(#mask4)" fill="orange" />
+
+        <!-- пара верхних крыльев -->
+        <path d="m275 240 c 380 -160, 300 260, 0 0" stroke="black" stroke-width="5" fill="url(#gradientRight)" />
+        <path d="m275 240 c -380 -160, -300 260, 0 0" stroke="black" stroke-width="5" fill="url(#gradientLeft)" />
+
+        <!-- пара нижних крыльев -->
+        <path d="m275 240 c 240 0, 220 360, 0 0" stroke="black" stroke-width="5" fill="url(#gradientRight)" />
+        <path d="m275 240 c -240 0, -220 360, 0 0" stroke="black" stroke-width="5" fill="url(#gradientLeft)" />
+
+        <!-- хвостик -->
+        <path d="m265 459 c 10 30, 50 80, 30 0" />
+    </symbol>
+
+    <use xlink:href="#bee"/>
+
+</svg>
