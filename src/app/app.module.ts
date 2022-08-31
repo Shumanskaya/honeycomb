@@ -3,7 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { WindowService } from './service/window.service';
+import { WindowService } from './core/window.service';
 
 @NgModule({
   declarations: [
@@ -11,7 +11,7 @@ import { WindowService } from './service/window.service';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
   ],
   providers: [WindowService],
   bootstrap: [AppComponent]

@@ -1,16 +1,15 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { MainComponent } from './beer/pages/main/main.component';
 
 const routes: Routes = [
   {
     path: '',
-    component: MainComponent
+    loadChildren: () => import('./main').then(m => m.MainModule)
   },
   {
-  path: 'beer',
-  loadChildren: () => import('./beer/beer.module').then(m => m.BeerModule)
-}
+    path: 'beer',
+    loadChildren: () => import('./beer').then(m => m.BeerModule)
+  }
 ];
 
 @NgModule({
