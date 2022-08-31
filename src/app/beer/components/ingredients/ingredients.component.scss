@@ -1,0 +1,46 @@
+//TODO все block-title повторяют стили - решить компонентов.общим классом
+
+.block-title {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    margin-bottom: .2rem;
+}
+
+.list:not(:last-child) {
+    margin-bottom: 1rem;
+}
+
+.block {
+    background-color: lightgray;
+    padding: .7rem;
+    border-top: 3px solid;
+
+    div:first-child {
+        flex-grow: 1;
+    }
+
+    p {
+        margin-bottom: .5rem;
+        border-bottom: 1px solid;
+        padding: .5rem .5rem .5rem 0;
+    }
+
+}
+
+.item {
+    display: flex;
+
+    p {
+        flex-grow: 1;
+    }
+
+    p:last-child {
+        text-align: end;
+    }
+}
+
+.list__title {
+    font-size: 1rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
