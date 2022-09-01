@@ -1,0 +1,25 @@
+<div *ngIf="recipes">
+    <p class="number">#{{ recipes.id }}</p>
+    <h1 class="title">{{ recipes.title }}</h1>
+    
+    <div class="intro">
+        <h2>{{ recipes.description }}</h2>
+    
+        <div class="feauture">
+            <p>abv<br>8.5%</p>
+            <p>ibu<br>65</p>
+            <p>og<br>1078</p>
+        </div>
+    </div>
+    
+    <div class="global-row">
+    
+        <hc-characteristics [characteristic]="characteristics"></hc-characteristics>
+    
+        <hc-ingredients [ingredients]="ingredients"></hc-ingredients>
+    
+        <hc-image></hc-image>
+    </div>
+</div>
+
+<div *ngIf="recipes === undefined"><p>Такого рецепта пока нет</p></div>

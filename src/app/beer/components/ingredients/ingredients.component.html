@@ -1,40 +1,40 @@
-<h3 class="block-title">ingredients</h3>
-<div class="block">
+<ng-container *ngIf="ingredients">
+    <h3 class="block-title">ingredients</h3>
+    <div class="block">
 
-    <div class="list">
-        <h3 class="list__title">
-            солод
-        </h3>
+        <div class="list">
+            <h3 class="list__title">
+                солод
+            </h3>
 
-        <div *ngFor="let malt of ingredients[0].malt" class="item">
-            <p>{{malt.name}}</p>
-            <p>{{malt.amount}}</p>
+            <div *ngFor="let malt of ingredients.malt" class="item">
+                <p>{{malt.name}}</p>
+                <p>{{malt.amount}}</p>
+            </div>
+
         </div>
 
-    </div>
+        <div class="list">
+            <h3 class="list__title">
+                хмель
+            </h3>
 
-    <div class="list">
-        <h3 class="list__title">
-            хмель
-        </h3>
+            <div class="item" *ngFor="let hop of ingredients.hops">
+                <p>{{hop.name}}</p>
+                <p>{{hop.amount}}</p>
+                <p>{{hop.addingTime}}</p>
+                <p>{{hop.attribute}}</p>
+            </div>
+        </div>
 
-        <div class="item" *ngFor="let hop of ingredients[0].hops">
-           <p>{{hop.name}}</p>
-           <p>{{hop.amount}}</p>
-           <p>{{hop.addingTime}}</p>
-           <p>{{hop.attribute}}</p>
+        <div class="list">
+            <h3 class="list__title">
+                дрожжи
+            </h3>
+
+            <div>
+                <p>{{ingredients.yeast}}</p>
+            </div>
         </div>
     </div>
-
-    <div class="list">
-        <h3 class="list__title">
-            дрожжи
-        </h3>
-
-        <div>
-           <p>{{ingredients[0].yeast}}</p>
-        </div>
-    </div>
-
-
-</div>
+</ng-container>
