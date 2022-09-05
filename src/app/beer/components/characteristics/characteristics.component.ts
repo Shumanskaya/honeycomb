@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { Characterisric } from '../../pages/beer/recipe/interface/characteristic';
+import { Characterisric } from 'src/app/beer/shared';
 
 @Component({
   selector: 'hc-characteristics',
@@ -8,8 +8,7 @@ import { Characterisric } from '../../pages/beer/recipe/interface/characteristic
 })
 export class CharacteristicsComponent implements OnInit {
 
-  //TODO переделать characteristic на объект
-  @Input() public characteristic: Characterisric[] = [];
+  @Input() public characteristic = {} as Characterisric | undefined;
 
   public valueCharacteristic: number[] = [];
 
@@ -18,10 +17,7 @@ export class CharacteristicsComponent implements OnInit {
   ngOnInit(): void {
 
     if (this.characteristic) {
-      this.characteristic.forEach(characteristc => {
-        this.valueCharacteristic = Object.values(characteristc);
-      })
-
+      this.valueCharacteristic = Object.values(this.characteristic);
     }
 
   }

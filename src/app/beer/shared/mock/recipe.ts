@@ -1,7 +1,6 @@
 import { BeerRecipe } from "../interface/recipe"
 
-export let beer = {
-    beers: [
+export const BEER: BeerRecipe[] = [
         {
             id: 1,
             title: "dog fight",
@@ -74,7 +73,7 @@ export let beer = {
             characterisric: {
                 volume: 20,
                 boilVolume: 25.5,
-                abv: null,
+                abv: 0,
                 targetFg: 1012,
                 targetOg: 1078,
                 ebc: 31.2,
@@ -141,4 +140,3 @@ export let beer = {
             }
         }
     ]
-}

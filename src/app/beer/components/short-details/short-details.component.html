@@ -1,0 +1,9 @@
+<div class="wrapper" *ngFor="let detail of details" routerLink="./{{detail.id}}">
+    <p class="title">{{ detail.title }}</p>
+    <div class="characteristic">
+        <p>abv: <span>{{ detail.characterisric?.abv }}</span></p>
+        <p>og: <span>{{ detail.characterisric?.targetOg }}</span></p>
+        <p>ibu: <span>его не было в рецепте - как считать и когда?</span></p>
+    </div>
+    <p class="image">тут будет картинка</p>
+</div>
