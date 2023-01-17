@@ -9,6 +9,10 @@ const routes: Routes = [
   {
     path: 'beer',
     loadChildren: () => import('./beer').then(m => m.BeerModule)
+  },
+  { 
+    path: "**",
+    loadChildren: () => import('./error').then(m => m.ErrorModule)
   }
 ];
 
